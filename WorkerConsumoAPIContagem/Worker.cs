@@ -6,7 +6,7 @@ namespace WorkerConsumoAPIContagem;
 
 public class Worker : BackgroundService
 {
-    private readonly string NAME_APIM_KEY = "Ocp-Apim-Subscription-Key";
+    private const string NAME_APIM_KEY = "Ocp-Apim-Subscription-Key";
     private readonly ILogger<Worker> _logger;
     private readonly IConfiguration _configuration;
     private readonly AsyncFallbackPolicy<ResultadoContador> _resiliencePolicy;
